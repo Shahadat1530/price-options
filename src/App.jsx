@@ -1,4 +1,4 @@
-import DaisyNav from "./components/DaisyNav/DaisyNav"
+// import DaisyNav from "./components/DaisyNav/DaisyNav"
 import NavBar from "./components/NavBar/NavBar"
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <NavBar></NavBar>
-      <DaisyNav></DaisyNav>
+      {/* <DaisyNav></DaisyNav> */}
       <h1 className="text-6xl bg-red-400">Vite + React</h1>
       
     </>

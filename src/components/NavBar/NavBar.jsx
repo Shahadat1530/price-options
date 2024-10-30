@@ -14,7 +14,7 @@ const NavBar = () => {
 
 
     return (
-        <nav>
+        <nav className="text-black">
             <div className="text-3xl md:hidden" onClick={() => setOpen(!open)}>
                 {
                     open === true ? <RiCloseLargeLine></RiCloseLargeLine> :
@@ -22,7 +22,7 @@ const NavBar = () => {
                 }
             </div>
             
-            <ul className="md:flex">
+            <ul className={`md:flex absolute duration-1000 ${open ? 'top-7' : '-top-40'} px-5 bg-slate-300 rounded-2xl`}>
                 {
                     routes.map(route =>
                         <Link
